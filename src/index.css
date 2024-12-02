@@ -1,13 +1,73 @@
-body {
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(52, 52, 52, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: whitesmoke;
+  max-width: 35rem;
+  border-radius: 1.2rem;
+  box-shadow: 1.2rem 1.4rem 1.6rem rgba(45, 44, 44, 0.15);
+  padding: 3.2rem;
+}
+.img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1000rem;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.location {
+  font-size: 1.3rem;
+  color: greenyellow;
+  font-weight: bold;
+}
+.text {
+  font-size: 1.1rem;
+}
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.btn {
+  padding: 1.2rem;
+  width: 100%;
+  background-color: rgba(140, 138, 138, 0.19);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  box-shadow: 1.2rem 1.4rem 1.6rem rgba(249, 248, 248, 0.015);
+}
+.btn:hover {
+  background-color: rgba(184, 182, 182, 0.414);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 30rem;
 }
